@@ -60,8 +60,8 @@
             </div> 
 
             <div ng-if="loggedIn" class="account-actions hidden-xs signed-in text-right clearfix">
-                <span class="email">Jas Singh</span>
-                <span class="link-spans"><a href="#profile-individual">Account</a> | <a href="#login">Logout</a></span>
+                <span class="email" id="accName">{{userName}}</span>
+                <span class="link-spans"><a href="{{profileLnk}}" id="accLink">Account</a> | <a href="#login">Logout</a></span>
             </div>
 
         </div>

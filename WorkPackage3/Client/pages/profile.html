@@ -453,6 +453,100 @@
                     </form>
                 </div>
             </div>
+            <div class="modal-wrapper fade" ng-if="showProfileModal">
+                <div class="modal" ng-class="{'show' : showProfileModal }">
+                    <i class="fa fa-close pull-right close-btn" ng-click="launchProfileModal($event, false)"></i>
+
+                    <h2>Profile</h2>
+                    <p><strong>Please provide details of the product / service by completing the form below</strong></p>
+                    <hr />
+                    <br />
+                    <form>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Name <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" value="Medelinked" />
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Description <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5">Medelinked is a secure mobile and online health platform that empowers you to take control of your health, from building your health profile to discovering, connecting to and sharing your health and wellness information with your trusted healthcare providers.</textarea>
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Problem Solving <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5">Medelinked is a great way to look after the people you love because better outcomes result when we know our own state of health and can talk with confidence to the people that care for us.
+
+                            We help you create permanent health profiles online, ensuring they are held in one secure space. Accessible at any time by smartphone, tablet, PC or Apple Mac, you can be sure they are always there and available to you and your healthcare partners the instant you need them.
+                                </textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Video URL</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" />
+                            </div>
+                        </div>
+
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Area of Digital Expertise <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <select id="digital-select" class="demo-default" placeholder="Select a tag..." multiple>
+                                    <option value="">Select a tag...</option>
+                                    <option selected>Personal Health Record</option>
+                                    <option>Nursing Applications</option>
+                                    <option>Nursing Documentation</option>
+                                    <option>RFID-Patient Tracking</option>
+                                    <option>Mobile Healthcare</option>
+                                    <option selected>Mobile Applications</option>
+                                    <option>Mobile Healthcare</option>
+                                    <option>Mobile Privacy & Security</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <script>
+
+                        </script>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Area of Medical Expertise <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <select id="medical-select" class="demo-default" placeholder="Select a tag...">
+                                    <option value="">Select a tag...</option>
+                                    <option selected>Diabetes</option>
+                                    <option>COPD</option>
+                                    <option selected>Asthma</option>
+                                    <option>Achalasia</option>
+                                    <option>Acid reflux</option>
+                                    <option>Antacid medicines</option>
+                                    <option>Benign migratory glossitis</option>
+                                    <option>Endocarditis</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-buttons text-right">
+                            <button type="submit" class="grey">Cancel</button>
+                            <input type="submit" value="Submit" class="green" />
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="modal-wrapper fade" ng-if="showMsgModal">
                 <div class="modal" ng-class="{'show' : showMsgModal }">
                     <i class="fa fa-close pull-right close-btn" ng-click="launchMsgModal($event, false)"></i>
