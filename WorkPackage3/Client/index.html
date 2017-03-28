@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="konferHealth">
+
+<head>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/selectize.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.0/angular-touch.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+  <script src="js/angular-carousel.js"></script>
+  <script src="js/ng-map.min.js"></script>
+  <script src="script.js"></script>
+
+
+  <script src="js/controllers/search.js"></script>
+  <script src="js/controllers/profile.js"></script>
+  <script src="js/controllers/individual-profile.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeLmDnx9CL0N_7olfs3-5pkyZy8okUnI0"async defer></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="searchController">
+
+  <nav class="nav-bar" ng-if="showNav">
+    <div class="text-center v-top-warning">
+        THIS SITE IS STILL IN ALPHA <a href="#_"> TELL US WHAT YOU THINK </a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-10">
+            <a class="navbar-brand" href="/">ReconnHealth</a>
+            <!--<ul class="nav hidden-sm hidden-xs">
+              <li><a ng-class="{ active: isActive('Home') }" href="#" ng-click="activateNav('Home')">Home</a></li>
+              <li><a ng-class="{ active: isActive('Profile') }" href="#profile" ng-click="activateNav('Profile')">Profile</a></li>
+              <li><a ng-class="{ active: isActive('Forms') }" href="#forms" ng-click="activateNav('Forms')">Forms</a></li>
+              <li><a ng-class="{ active: isActive('Builder') }" href="#builder" ng-click="activateNav('Builder')">Builder</a></li>
+            </ul>-->
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-2">
+
+             <div ng-if="loggedOut" div class="account-actions hidden-xs signed-out text-right clearfix">
+                <a class="btn fill" href="#login">Login</a>
+                <a class="btn green" href="#register">Register</a>
+            </div> 
+
+            <div ng-if="loggedIn" class="account-actions hidden-xs signed-in text-right clearfix">
+                <span class="email">Jas Singh</span>
+                <span class="link-spans"><a href="#profile-individual">Account</a> | <a href="#login">Logout</a></span>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="main">
+
+      <!-- angular templating -->
+  		<!-- this is where content will be injected -->
+      <div ng-view></div>
+
+  </div>
+
+  <footer ng-include src="'/partials/footer.html'"></footer>
+
+</body>
+
+</html>

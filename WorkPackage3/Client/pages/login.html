@@ -1,0 +1,149 @@
+
+<ng-include src="'/partials/profile-header.html'"></ng-include>
+
+<div class="filter-tabs">
+	<div class="container">
+		<div class="row">
+      <div class="col-xs-3 hidden-sm col-sm-3">
+
+      </div>
+			<div class="col-xs-12 col-sm-9">
+						<ul>
+								<li><a ng-class="{ active: isActive('About') }" ng-click="activateTab($event, 'About')" href="#_">About</a></li>
+								<li><a ng-class="{ active: isActive('Events') }" ng-click="activateTab($event, 'Events')" href="#_">Events</a></li>
+								<!-- <li><a ng-class="{ active: isActive('Messages') }" ng-click="activateTab($event, 'Messages')" href="#_">Messages<span class="noti">2</span></a></li>
+                <li><a ng-class="{ active: isActive('Watch List') }" ng-click="activateTab($event, 'Watch List')" href="#_">Watch List</a></li> -->
+						</ul>
+					</div>
+				</div>
+		</div>
+</div>
+
+<div class="content">
+
+		<div class="container">
+			<div class="row">
+        <div class="col-xs-3 hidden-xs hidden-sm right-nudge">
+
+          <div class="profile-image" style="background-image:url('images/medelinked-logo.jpg')"></div>
+          <div class="sidebar-panel" ng-include src="'/partials/sidebars/panel-type-6.html'"></div>
+          <div class="sidebar-panel" ng-include src="'/partials/sidebars/panel-type-5.html'"></div>
+
+        </div>
+
+				<div class="col-xs-12 col-md-9 article" ng-if="isActive('About')">
+
+	          <div class="row padding-top">
+	            <div class="col-xs-12">
+
+	              <!-- <h2>Manage your health with Medelinked</h2> -->
+	              <p><strong>Medelinked is a secure mobile and online health platform that empowers you to take control of your health, from building your health profile to discovering, connecting to and sharing your health and wellness information with your trusted healthcare providers.</strong></p>
+								<hr/>
+
+								<h3>Who are Medelinked?</h3>
+							  <p>
+									Medelinked was founded as Zaptag in 2005 in order to allow individuals to use mobile technology and the cloud to increase the effectiveness of health care by enabling them to securely build their health profile online and to connect and share with their network of trusted health partners.
+								</p>
+									<p>
+										Managing all their health data in one place helps individuals securely track and monitor improvements easier and quicker and share vital data with their healthcare providers (doctor, consultant, insurer) to ensure they have access to their latest health data. This enables them to provide the best possible care and it keeps the individual in control of their own health.
+
+										The Medelinked Health Cloud and API is also allowing developers to create series of new applications that deliver real health benefits to the end user.
+
+										Medelinked is based in Oxfordshire, UK.
+
+								</p>
+
+								<img src="images/medelinked-example.jpg"/>
+
+								<br/>
+								<h3>How does it benefit you?</h3>
+								<p>
+
+									Medelinked is a great way to look after the people you love because better outcomes result when we know our own state of health and can talk with confidence to the people that care for us.
+
+									We help you create permanent health profiles online, ensuring they are held in one secure space. Accessible at any time by smartphone, tablet, PC or Apple Mac, you can be sure they are always there and available to you and your healthcare partners the instant you need them.
+
+								</p>
+
+
+								<hr/>
+
+								<br/>
+								<h3>How it works for health professionals</h3>
+								<p>
+
+									The Medelinked Platform’s Health Partner Portal enables you to treat more patients in more appropriate ways, delivering better outcomes through enhanced patient engagement. You can quickly and easily create health accounts for your patients and safely and securely upload health records directly through the Portal to an individual patient’s online or mobile Medelinked Health Platform account.
+								</p>
+								<p>
+
+									Delivered via the Medelinked Partner Health Portal, Medelinked Snapshot, which can be displayed on a PC, Apple Mac or any iOS or Android tablet or smartphone, enables you to use Portal to engage the patient be a partners in health management, creating more time for you to focus on the patient in every consultation or increase the number of patients you are able to interact with on a daily basis either remotely or face-to-face.
+
+								</p>
+
+	              <br/>
+							  <br/>
+								<br/>
+
+	            </div>
+	        	</div>
+			</div>
+
+
+				<div class="col-xs-12 col-md-9" ng-if="isActive('Events')">
+
+          <div class="action-bar">
+              <p>You are running <strong>2</strong> events</p>
+              <div class="buttons">
+                  <a class="btn" href="#_">Create Event</a>
+              </div>
+          </div>
+
+          <div class="row single-item-row">
+            <div class="col-xs-12">
+              <span class="meta-data">Posted <strong>12th March</strong> @ <strong>12:30</strong></span>
+              <h2>Tech in Medecine Seminar</h2>
+              <p><strong>konfer fuels growth and success by connecting businesses.</strong></p>
+              <p>
+                Register 13 December 2012 New technique that could aid heart surgery: A University of Hull research team has successfully developed a novel system for keeping human heart tissue biopsies alive...
+                Register 13 December 2012 New technique that could aid heart surgery: A University of Hull research team has successfully developed a novel system for keeping human heart tissue biopsies alive...							</p>
+
+                <br/>
+              <h5>Details</h5>
+              <ul class="plain-list">
+  							<li>Approx Attendees <strong>150</strong></li>
+                <li>Catering Provided <strong>Yes</strong></li>
+                <li>Approx Length <strong>2-3 Hours</strong></li>
+  						</ul>
+
+            </div>
+        	</div>
+
+
+          <div class="row single-item-row">
+            <div class="col-xs-12">
+              <span class="meta-data">Posted <strong>12th March</strong> @ <strong>12:30</strong></span>
+              <h2>Tech in Medecine Seminar</h2>
+              <p><strong>konfer fuels growth and success by connecting businesses.</strong></p>
+              <p>
+                Register 13 December 2012 New technique that could aid heart surgery: A University of Hull research team has successfully developed a novel system for keeping human heart tissue biopsies alive...
+                Register 13 December 2012 New technique that could aid heart surgery: A University of Hull research team has successfully developed a novel system for keeping human heart tissue biopsies alive...							</p>
+
+                <br/>
+              <h5>Details</h5>
+              <ul class="plain-list">
+  							<li>Approx Attendees <strong>150</strong></li>
+                <li>Catering Provided <strong>Yes</strong></li>
+                <li>Approx Length <strong>2-3 Hours</strong></li>
+  						</ul>
+
+            </div>
+        	</div>
+				</div>
+
+
+	</div>
+		</div>
+
+
+
+</div>

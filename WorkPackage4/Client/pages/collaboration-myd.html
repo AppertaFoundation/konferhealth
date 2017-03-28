@@ -1,0 +1,150 @@
+﻿
+<div class="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-6 single-title-area">
+                <h1>Collaboration Request - MyDirectives</h1>
+                <ul class="meta-li">
+                    <li>Evaluation/Pilot</li>
+                </ul>
+            </div>
+            <div class="col-xs-3 hidden-xs col-sm-3">
+                <br />
+                <br />
+                <a href="" ng-click="launchMsgModal($event, true)" class="mark">Respond&#160;&#160;<i class="fa fa-caret-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-xs hidden-sm right-nudge">
+                <div class="profile-image" style="background-image:url('../images/my-directive-logo.png');background-repeat:no-repeat;background-position:center"></div>
+                <h3>Details</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Organisation</span>
+                        <span class="stat-data">AD Vault Inc.</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Contact</span>
+                        <span class="stat-data">Jonathan Carr Brown</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Product</span>
+                        <span class="stat-data">MyDirectives</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Population Size Required</span>
+                        <span class="stat-data">200,000</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Demographic Mix Required</span>
+                        <span class="stat-data">Standard population sample</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Event Date</span>
+                        <span class="stat-data">16-Oct-17</span>
+                    </li>
+                    
+                    <li>
+                        <span class="stat-name">Funding</span>
+                        <span class="stat-data"></span>
+                    </li>
+                </ul>
+
+                <h3>Areas Of Expertise</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Digital</span>
+                        <span class="stat-data">Mobile Application</span>
+                        <span class="stat-data">Interoperability </span>
+                        <span class="stat-data">Mobile Healthcare</span>
+                        <span class="stat-data">Personal Health Information</span>
+                        <span class="stat-data">Nursing Applications</span>
+                        <span class="stat-data">Electronic Health Records</span>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="col-xs-12 col-md-9 article" ng-if="isActive('About')">
+                <div class="row padding-top">
+                    <div class="col-xs-12">
+                        <!-- <h2>Manage your health with Medelinked</h2> -->
+                        <p><strong>US company seeks first free test site in UK for Digital Emergency, Critical and Advance Care Plans</strong></p>
+                        <p>
+                            MyDirectives is a succesful US approach to creating Emergency, Critical and Advance Care Plans at a population level. We now want to evaluate our apporach in the UK and seek either a CCG or Hospital Trust partner who would be willing to work with MyDirectives to delvier a pilot. MyDirectives will deliver its technology and services free for six months.
+                        </p>
+                        
+                        <br />
+                        <h3>Problem trying to solve</h3>
+                        <p>
+                            MyDirectives is trying to solve the following problems: 1) Loved ones not knowing what friends and family members want in a medical crisis; 2) Doctors not knowing who to talk to or where to find the relevant statement of wishes 3) The creation of statements they are not useful for clinicians 4) Patient wishes not being adhered to.
+                        </p>
+
+                        <hr />
+                        <br />
+                        <h3>Aims / Objectives</h3>
+                        <p>
+                            Reduction in unwanted procedures and attendance
+                        </p>
+                        <hr />
+                        <br />
+                        <h3>Benefit To Health Service</h3>
+                        <p>There is actual and research evidence suggesting that for every citizen in possession of an ECACP the health system will save £2,100 in a health crisis.</p>
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>Organisational Involvement Required</h3>
+                        <p>We would ask the organisation to get all its staff to fill in an ECACP. We would require advocacy from staff. We would need to be able to send invites digitally either by mobile or email to a specified cohort of citizens.</p>
+                        <br />
+                        <hr />
+                        
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="modal-wrapper fade" ng-if="showMsgModal">
+                <div class="modal" ng-class="{'show' : showMsgModal }">
+                    <i class="fa fa-close pull-right close-btn" ng-click="launchMsgModal($event, false)"></i>
+
+                    <h2>Send Message</h2>
+                    <hr />
+                    <br />
+                    <form>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Subject <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" />
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Message <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="form-buttons text-right">
+                            <button type="submit" class="grey">Cancel</button>
+                            <input type="submit" value="Send" class="green" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

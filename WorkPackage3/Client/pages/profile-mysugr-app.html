@@ -1,0 +1,211 @@
+﻿
+<div class="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-6 single-title-area">
+                <h1>{{getProfileDataMySugrApp().user}}</h1>
+                <ul class="meta-li">
+                    <li>{{getProfileDataMySugrApp().summary}}</li>
+                </ul>
+            </div>
+            <div class="col-xs-3 hidden-xs col-sm-3">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="filter-tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <ul>
+                    <li><a ng-class="{ active: isActive('About') }" ng-click="activateTab($event, 'About')" href="#_">About</a></li>
+                    <li><a ng-class="{ active: isActive('Contacts') }" ng-click="activateTab($event, 'Contacts')" href="#_">Contacts</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-xs hidden-sm right-nudge">
+                <div class="profile-image" style="background-image:url({{getProfileDataMySugrApp().avatar}});background-color:#fff;background-repeat:no-repeat"></div>
+                <h3>Contact Details</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Organisation</span>
+                        <span class="stat-data"><a href="/#/profile-mysugr">MySugr</a></span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Phone Number</span>
+                        <span class="stat-data">Austria - +43 720 884555</span>
+                        <span class="stat-data">UK  - +44 800 011 9897</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Email</span>
+                        <span class="stat-data">sales@mysugr.com</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Website</span>
+                        <span class="stat-data"><a href="http://www.mysugr.com/apps" target="_blank">www.mysugr.com/apps</a></span>
+                    </li>
+                    <li>
+                        <img src="../images/social-icons.png" style="max-width:200px;" />
+                    </li>
+                </ul>
+
+                <h3>Areas Of Expertise</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Digital</span>
+                        <span class="stat-data">Monitoring & Measurement</span>
+                        <span class="stat-data">Prevention</span>
+                        <span class="stat-data">Symptoms & Signs</span>
+                        <span class="stat-data">Post Diagnosis information</span>
+                        <span class="stat-data">Mobile Healthcare</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Medical</span>
+                        <span class="stat-data">Diabetes</span>
+                    </li>
+                </ul>
+                <div class="styled-title">
+                    <div class="box"><i class="fa fa-bullhorn"></i></div>
+                    <h3>Collaboration Request</h3>
+                </div>
+                <ul class="bullet-list">
+                    <li>
+                        <p>Make a collaboration request to get more information about similar companies and solutions</p>
+                        <a href="/#/collaboration" class="text-link">More&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-9 article" ng-if="isActive('About')">
+                <div class="row padding-top">
+                    <div class="col-xs-12">
+                        <!-- <h2>Manage your health with Medelinked</h2> -->
+                        <p><strong>A smart diabetes companion that’s there for you anytime, anywhere and for free. Face the challenges of diabetes with confidence!</strong></p>
+                        <hr />
+                        
+                        <p>
+                            The free mySugr app is your loyal diabetes tracker for your iPhone. From now on, stay in control of your health and say goodbye to manual logging. On a daily basis, mySugr helps you control your blood sugar levels, monitor your carbs, track your insulin use and avoid hypers/hypos to make your diabetes suck less.
+                        </p>
+                        <div class="col-sm-6">
+                            <iframe width="100%" height="360" src="https://www.youtube.com/embed/BTWqq1EZWFs?ecver=2" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <br />
+                        <h3>Problem trying to solve</h3>
+                        <p>
+                            Data plays a key role in Type 1 or Type 2 diabetes management and mySugr simplifies the diabetic data ecosystem. It’s quick and easy to collect your daily therapy data such as meals, diet, meds, blood sugars, insulin, carbs and more. You can use mySugr as a 24-hour tracker, seeing all essential diabetic data at a glance, right on the first screen. Monitor your medical condition with a graph of the day, average blood sugar, standard deviation, amount of insulin, activity levels and more. Based on five-star reviews and ratings, mySugr is the most popular diary app for diabetics in the world.
+
+                        </p>
+
+                        <hr />
+                        <br />
+                        <h3>Aims / Objectives</h3>
+                        <p>
+                            The mySugr app is a daily diary tracker that removes the burden of monitoring, controlling and managing your Type 1 or Type 2 diabetes. Your medical information is just there at a glance. Stay in charge of your health, monitor your diet, manage your insulin intake, avoid hypers/hypos and be in control as a diabetic, all for the price of a cup of coffee per month.
+
+                        </p>
+                        <hr />
+                        <br />
+                        <h3>CCG Support</h3>
+
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>AHSN Support</h3>
+
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>CDIS Lot 4.6 Patient Workflow & Tracking</li>
+                        </ul>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Contacts')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                Name
+                            </div>
+                            <div class="table-cell wide">
+                                Job Title
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Email
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Action
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">Frank Westermann</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                CEO
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                sales@mysugr.com
+                            </div>
+                            <div class="table-cell action-cell text-center">
+                                <a href="" class="mark">View Profile&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                                &nbsp;
+                                <a href="" ng-click="launchMsgModal($event, false)" class="mark">Send Message&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-wrapper fade" ng-if="showMsgModal">
+                        <div class="modal" ng-class="{'show' : showMsgModal }">
+                            <i class="fa fa-close pull-right close-btn" ng-click="launchMsgModal($event, false)"></i>
+
+                            <h2>Send Message</h2>
+                            <hr />
+                            <br />
+                            <form>
+                                <div class="row field-row">
+                                    <div class="col-md-4">
+                                        <label>Subject <span class="required">*</span></label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" name="textfield" />
+                                    </div>
+                                </div>
+                                <div class="row field-row">
+                                    <div class="col-md-4">
+                                        <label>Message <span class="required">*</span></label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <textarea rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <hr />
+                                <div class="form-buttons text-right">
+                                    <button type="submit" class="grey">Cancel</button>
+                                    <input type="submit" value="Send" class="green" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>

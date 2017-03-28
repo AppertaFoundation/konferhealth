@@ -1,0 +1,134 @@
+
+
+.pathway-builder-header {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+    @media (min-width: 768px) {
+            text-align: left;
+    }
+}
+
+
+.pathway-builder {
+
+  >.row {
+    position: relative;
+
+  }
+  .line {
+    height: 1px;
+    position: absolute;
+    background-color: #e7eef0;
+    top: 71%;
+    left: 0;
+    right: 0;
+    @media (min-width: 768px) {
+      left: 100px;
+      right: -100%;
+      top: 50%;
+    }
+  }
+
+  .step {
+    margin-top: 70px;
+    background-color: #f7fbfe;
+    padding: 15px 20px 20px;
+    border: 1px dotted #c7d7dd;
+    border-top: 3px solid #5eaee8;
+    @media (min-width: 768px) {
+      margin-right: 50px;
+    }
+  }
+
+  .company-pins {
+    height: 240px;
+    position: relative;
+
+  }
+
+
+  .circle-wrapper {
+    position: absolute;
+    top: 76px;
+    height: 135px;
+    width: 90px;
+    > span {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 82%;
+        left: 0;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        color: #8095a5;
+        right: 0;
+      }
+
+    &.pin-1 {
+      .circle-pin {
+        background-color: #e4f4da;
+      }
+    }
+
+    &.pin-2 {
+      left: 25%;
+
+      .circle-pin {
+          background-color: #ecd8f2;
+      }
+    }
+    &.pin-3 {
+      left: 50%;
+      .circle-pin {
+          background-color: #caeeeb;
+       }
+    }
+    &.pin-4 {
+      left: 75%;
+      .circle-pin {
+          background-color: #d0e0ec;
+      }
+    }
+
+  }
+
+  .circle-pin {
+    height: 90px;
+    width: 90px;
+    background-color: #f2f9fd;
+    border-radius: 100%;
+    border: 1px dotted #c7d7dd;
+    position: absolute;
+    cursor: pointer;
+
+    &.active {
+      & + span {
+          color: #10aa05;
+      }
+      &:before {
+        content: "\f058";
+        font-family: FontAwesome;
+        display: block;
+        position: absolute;
+        color: #78df71;
+        bottom: -10px;
+        font-size: 30px;
+        bottom: -20px;
+        right: -12px;
+        }
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        left: -10px;
+        right: -10px;
+        border-radius: 100%;
+        border: 5px solid #78df71;
+      }
+    }
+  }
+
+}

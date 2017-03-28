@@ -1,0 +1,52 @@
+
+
+.center-form {
+  padding: 55px 0px 120px;
+    min-height: 850px;
+  background-color: #f2f9fd;
+
+  label, label span {
+        line-height: inherit;
+  }
+
+
+    .logo {
+      background-image: url(../images/logo.png);
+    height: 50px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 40px;
+    background-position: 10px;
+    
+      }
+
+      .prompt {
+
+        margin-top: 20px;
+        text-align: center;
+
+      }
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 20px 25px 25px;
+  border: 1px solid #e4eff6;
+  box-shadow: 0px 0px 15px rgba(71, 102, 125, 0.07);
+  border-top: 3px solid #5396c6;
+
+
+}
+
+.login-header {
+  text-align: center;
+    margin-bottom: 20px;
+      h6 {
+    color: #5396c6;
+    font-weight: 600;
+    font-size: 22px;
+    }
+
+}

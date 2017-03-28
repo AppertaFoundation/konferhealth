@@ -1,0 +1,153 @@
+﻿
+<div class="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-6 single-title-area">
+                <h1>Collaboration Request - Southwark CCG</h1>
+                <ul class="meta-li">
+                    <li>Information</li>
+                </ul>
+            </div>
+            <div class="col-xs-3 hidden-xs col-sm-3">
+                <br />
+                <br />
+                <a href="" ng-click="launchMsgModal($event, true)" class="mark">Respond&#160;&#160;<i class="fa fa-caret-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-xs hidden-sm right-nudge">
+                <div class="profile-image" style="background-image:url('../images/Southwark-CCG.jpg');background-repeat:no-repeat;background-position:center"></div>
+                <h3>Details</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Organisation</span>
+                        <span class="stat-data">Southwark CCG</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Contact</span>
+                        <span class="stat-data">Matteo Berlucchi</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Product</span>
+                        <span class="stat-data"></span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Population Size Required</span>
+                        <span class="stat-data"></span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Demographic Mix Required</span>
+                        <span class="stat-data"></span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Start Date</span>
+                        <span class="stat-data">Sep-17</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">End Date</span>
+                        <span class="stat-data">Oct-17</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Funding</span>
+                        <span class="stat-data">£50,000</span>
+                    </li>
+                </ul>
+
+                <h3>Areas Of Expertise</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Digital</span>
+                        <span class="stat-data">Mobile Application</span>
+                        <span class="stat-data">Mobile Healthcare</span>
+                        <span class="stat-data">Personal Health Information</span>
+                        <span class="stat-data">Web/internet solutions</span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-xs-12 col-md-9 article" ng-if="isActive('About')">
+                <div class="row padding-top">
+                    <div class="col-xs-12">
+                        <!-- <h2>Manage your health with Medelinked</h2> -->
+                        <p><strong>Tell us more your GP online consultation approaches</strong></p>
+                        <p>
+                            We wish to hear from anyone who feels they have a digital solution that can help GPs deliver online consultations.
+                        </p>
+
+                        <br />
+                        <h3>Problem trying to solve</h3>
+                        <p>
+                            Southwark CCG is looking for demand management solutions for its GPs
+                        </p>
+
+                        <hr />
+                        <br />
+                        <h3>Aims / Objectives</h3>
+                        <p>
+                            Scope the mark prior to placing a tender for a CCG wide online consultation system
+                        </p>
+                        <hr />
+                        <br />
+                        <h3>Benefit To Health Service</h3>
+                        <p>Quicker access to care and an appropriate reduction in the physical attendance at GP practices.</p>
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>Organisational Involvement Required</h3>
+                        <p>None.</p>
+                        <br />
+                        <hr />
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal-wrapper fade" ng-if="showMsgModal">
+                <div class="modal" ng-class="{'show' : showMsgModal }">
+                    <i class="fa fa-close pull-right close-btn" ng-click="launchMsgModal($event, false)"></i>
+
+                    <h2>Send Message</h2>
+                    <hr />
+                    <br />
+                    <form>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Subject <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" />
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Message <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="form-buttons text-right">
+                            <button type="submit" class="grey">Cancel</button>
+                            <input type="submit" value="Send" class="green" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

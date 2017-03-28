@@ -1,0 +1,21 @@
+
+
+.map-wrapper, #map {
+  height: 700px;
+  position:relative;
+}
+.map-div {
+  top: -17px;
+  position: relative;
+  border-top: 1px dashed #c7d7dd;
+}
+
+.left-panel-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: 64px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-right: 1px dashed #c7d7dd;
+  padding:15px;
+}

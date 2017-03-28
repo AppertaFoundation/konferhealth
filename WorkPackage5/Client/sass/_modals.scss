@@ -1,0 +1,61 @@
+
+
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+
+.modal-wrapper {
+
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modal {
+      width: 600px;
+      margin-left: -300px;
+      position: absolute;
+      left: 50%;
+      padding: 23px 30px;
+      background-color: #fff;
+      min-height: 400px;
+      border-top: 5px solid #438fcf;
+      top: 300px;
+      border-radius: 3px;
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+      @include transition();
+
+      &.show {
+        top: 120px;
+      }
+
+    }
+
+    .close-btn {
+      float: right;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 23px;
+      color: #c9d7e1;
+      cursor: pointer;
+      margin-right: -15px;
+      margin-top: -7px;
+
+      &:hover {
+        color: red;
+      }
+    }
+}

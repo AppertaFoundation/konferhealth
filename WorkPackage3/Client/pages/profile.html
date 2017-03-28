@@ -1,0 +1,492 @@
+
+<ng-include src="'/partials/profile-header.html'"></ng-include>
+<div class="filter-tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <ul>
+                    <li><a ng-class="{ active: isActive('About') }" ng-click="activateTab($event, 'About')" href="#_">About</a></li>
+                    <li><a ng-class="{ active: isActive('Products') }" ng-click="activateTab($event, 'Products')" href="#_">Products &amp; Services</a></li>
+                    <li><a ng-class="{ active: isActive('Contacts') }" ng-click="activateTab($event, 'Contacts')" href="#_">Contacts</a></li>
+                    <li><a ng-class="{ active: isActive('Contracts') }" ng-click="activateTab($event, 'Contracts')" href="#_">Contracts</a></li>
+                    <li><a ng-class="{ active: isActive('Case Studies') }" ng-click="activateTab($event, 'Case Studies')" href="#_">Case Studies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-xs hidden-sm right-nudge">
+                <div class="profile-image" style="background-image:url({{getProfileData().avatar}})"></div>
+                <h3>Contact Details</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Address</span>
+                        <span class="stat-data">Newtown House</span>
+                        <span class="stat-data">Newtown Road</span>
+                        <span class="stat-data">Henley-On-Thames</span>
+                        <span class="stat-data">RG9 1HG</span>
+                        <span class="stat-data">United Kingdom</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Phone Number</span>
+                        <span class="stat-data">+44 (0)20 8720 7340</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Email</span>
+                        <span class="stat-data">support@medelinked.com</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Website</span>
+                        <span class="stat-data"><a href="http://www.medelinked.com" target="_blank">www.medelinked.com</a></span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Size</span>
+                        <span class="stat-data">10</span>
+                    </li>
+                    <li>
+                        <img src="../images/social-icons.png" style="max-width:200px;" />
+                    </li>
+                </ul>
+
+                <h3>Areas Of Expertise</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Digital</span>
+                        <span class="stat-data">Personal Health Record</span>
+                        <span class="stat-data">Personal Health Information</span>
+                        <span class="stat-data">Mobile Applications</span>
+                        <span class="stat-data">Medical Device Integration</span>
+                        <span class="stat-data">Mobile Healthcare</span>
+                        <span class="stat-data">Telemedicine</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Medical</span>
+                        <span class="stat-data">Diabetes</span>
+                        <span class="stat-data">COPD</span>
+                        <span class="stat-data">Asthma</span>
+                        <span class="stat-data">Selfcare</span>
+                        <span class="stat-data">Wellness / Preventative Care</span>
+                    </li>
+                </ul>
+                <div class="styled-title">
+                    <div class="box"><i class="fa fa-bullhorn"></i></div>
+                    <h3>Collaboration Request</h3>
+                </div>
+                <ul class="bullet-list">
+                    <li>
+                        <p>Make a collaboration request to get more information about the MySugr App</p>
+                        <a href="/#/collaboration" class="text-link">More&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-9 article" ng-if="isActive('About')">
+                <div class="row padding-top">
+                    <div class="col-xs-12">
+                        <!-- <h2>Manage your health with Medelinked</h2> -->
+                        <p><strong>Medelinked is a secure mobile and online health platform that empowers you to take control of your health, from building your health profile to discovering, connecting to and sharing your health and wellness information with your trusted healthcare providers.</strong></p>
+                        <hr />
+                        <h3>Who are Medelinked?</h3>
+                        <p>
+                            Medelinked was founded as Zaptag in 2005 in order to allow individuals to use mobile technology and the cloud to increase the effectiveness of health care by enabling them to securely build their health profile online and to connect and share with their network of trusted health partners.
+                        </p>
+                        <p>
+                            Managing all their health data in one place helps individuals securely track and monitor improvements easier and quicker and share vital data with their healthcare providers (doctor, consultant, insurer) to ensure they have access to their latest health data. This enables them to provide the best possible care and it keeps the individual in control of their own health.
+
+                            The Medelinked Health Cloud and API is also allowing developers to create series of new applications that deliver real health benefits to the end user.
+
+                            Medelinked is based in Oxfordshire, UK.
+
+                        </p>
+                        <img src="images/medelinked-example.jpg" />
+                        <br />
+                        <h3>Problem trying to solve</h3>
+                        <p>
+                            Medelinked is a great way to look after the people you love because better outcomes result when we know our own state of health and can talk with confidence to the people that care for us.
+
+                            We help you create permanent health profiles online, ensuring they are held in one secure space. Accessible at any time by smartphone, tablet, PC or Apple Mac, you can be sure they are always there and available to you and your healthcare partners the instant you need them.
+
+                        </p>
+
+                        <hr />
+                        <br />
+                        <h3>Aims / Objectives</h3>
+                        <p>
+                            Medelinked is a great way to look after the people you love because better outcomes result when we know our own state of health and can talk with confidence to the people that care for us.
+
+                        </p>
+                        <hr />
+                        <br />
+                        <h3>CCG Support</h3>
+                        <ul>
+                            <li>NHS Birmingham South And Central CCG</li>
+                        </ul>
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>AHSN Support</h3>
+                        <ul>
+                            <li>Academic Health Science Network for the North West Coast</li>
+                        </ul>
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>CDIS Lot 4.6 Patient Workflow & Tracking</li>
+                        </ul>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-9" ng-if="isActive('Products')">
+                <div class="action-bar">
+                    <p>You have <strong>3</strong> active products / services</p>
+                    <div class="buttons">
+                        <a class="btn" href="#_" ng-click="launchModal($event, true)">Add Product / Service</a>
+                    </div>
+                </div>
+                <div class="row single-item-row">
+                    <div class="col-xs-12">
+                        <h2>Medelinked - Personal Health Account</h2>
+                        <p><strong>Medelinked is a secure mobile and online health platform that empowers you to take control of your health, from building your health profile to discovering, connecting to and sharing your health and wellness information with your trusted healthcare providers.</strong></p>
+                        <p>
+                            Medelinked enables you to create your own health profile by collating information using easy-to-view and understand snapshots and timelines from all the different health professionals you interact with as well as connected health applications and devices.
+                        </p>
+                        <p>
+                            Medelinked allows you to set, act on and monitor wellness targets, and record health numbers and record a range of medical details including allergies, conditions, immunisations, medications and tests and store clinical standard DICOM MRI scans, x-rays and insurance and other documentation.
+                        </p>
+                        <br />
+                        <h5>Details</h5>
+                        <ul class="plain-list">
+                            <li>Type <strong>Product</strong></li>
+                            <li>Commercial Model <strong>Subscription Based</strong></li>
+                            <li>Area Of Digital Expertise <strong>Personal Health Record, Mobile Application</strong></li>
+                            <li>Area Of Medical Expertise <strong>Selfcare, Longterm Condition Management, Wellness &amp; Preventative Care</strong></li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="/#/profile-medelinked-phr">View</a>
+                            &nbsp;
+                            <a class="btn" href="#_" ng-click="launchModal($event, true)">Edit</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row single-item-row">
+                    <div class="col-xs-12">
+                        <h2>Medelinked - Health Provider Portal</h2>
+                        <p><strong>Constantly enabling improved outcomes through enhanced patient engagement.</strong></p>
+                        <p>
+                            The Medelinked Platform’s Health Partner Portal enables you to treat more patients in more appropriate ways, delivering better outcomes through enhanced patient engagement. You can quickly and easily create health accounts for your patients and safely and securely upload health records directly through the Portal to an individual patient’s online or mobile Medelinked Health Platform account.
+                        </p>
+                        <br />
+                        <h5>Details</h5>
+                        <ul class="plain-list">
+                            <li>Type <strong>Product</strong></li>
+                            <li>Commercial Model <strong>Subscription</strong></li>
+                            <li>Area Of Digital Expertise <strong>Electronic Health Record, Mobile Application, Patient Communication</strong></li>
+                            <li>Area Of Medical Expertise <strong>Primary Care</strong></li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="">View</a>
+                            &nbsp;
+                            <a class="btn" href="">Edit</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row single-item-row">
+                    <div class="col-xs-12">
+                        <h2>Happy by Medelinked</h2>
+                        <p><strong>Record how you're feeling throughout the day</strong></p>
+                        <p>
+                            The Happy app is a great way to record how you're feeling through out the day and to see your happy progress. You can take photos to start building your Happy Wall and you can choose to share your happy moments with other users on our Global Happy Wall. We have partnered with CBT Clinics to offer specialist help by being able to speak to experienced Clinical Psychologists and Cognitive Behavioural Psychotherapists.
+                        </p>
+                        <br />
+                        <h5>Details</h5>
+                        <ul class="plain-list">
+                            <li>Type <strong>Product</strong></li>
+                            <li>Commercial Model <strong>Free</strong></li>
+                            <li>Area Of Digital Expertise <strong>Mobile Application, Patient Engagement</strong></li>
+                            <li>Area Of Medical Expertise <strong>Mental Health</strong></li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="">View</a>
+                            &nbsp;
+                            <a class="btn" href="#_">Edit</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Contacts')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                Name
+                            </div>
+                            <div class="table-cell wide">
+                                Job Title
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Email
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Action
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">Jas Singh</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                CTO
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                jas.singh@medelinked.com
+                            </div>
+                            <div class="table-cell action-cell text-center">
+                                <a href="/#/profile-individual" class="mark">View Profile&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                                &nbsp;
+                                <a href="" ng-click="launchMsgModal($event, false)" class="mark">Send Message&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">Ian Gallifant</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                CEO
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                iangallifant@medelinked.com
+                            </div>
+                            <div class="table-cell action-cell text-center">
+                                <a href="" class="mark">View Profile&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                                &nbsp;
+                                <a href="" ng-click="launchMsgModal($event, true)" class="mark">Send Message&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Contracts')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                With
+                            </div>
+                            <div class="table-cell wide">
+                                Description
+                            </div>
+                            <div class="table-cell">
+                                Value
+                            </div>
+                            
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">Aviva International Solutions</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                Supporting the Aviva International Solutions MyHealthPassport proposition to all of their international insurance customers.
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                Available On Request
+                            </div>
+                            
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">IntegraGlobal</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                Supporting the IntegraGlobal yourHealth app allowing their customers to manage their health and insurance plan on the move.
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                Available On Request
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Case Studies')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                Client
+                            </div>
+                            <div class="table-cell wide">
+                                Description
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Action
+                            </div>
+
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">IntegraGlobal</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                Customers with the IntegraGlobal International Health Plan can now use a new UK-developed customer smartphone app to provide access to unique integrated support environment featuring: their securely stored personal medical records; the ability to get immediate access to emergency medical assistance, advice and support services; access cover details; get pre-authorisation for treatment and submit claims - wherever they are located in the World.
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                <a href="" class="mark">View&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-wrapper fade" ng-if="showModal">
+                <div class="modal" ng-class="{'show' : showModal }">
+                    <i class="fa fa-close pull-right close-btn" ng-click="launchModal($event, false)"></i>
+
+                    <h2>Add Product / Service</h2>
+                    <p><strong>Please provide details of the product / service by completing the form below</strong></p>
+                    <hr />
+                    <br />
+                    <form>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Name <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" />
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Description <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Problem Solving <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Type</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select>
+                                    <option>Product</option>
+                                    <option>Service</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Video URL</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" />
+                            </div>
+                        </div>
+
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Area of Digital Expertise <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <select id="digital-select" class="demo-default" placeholder="Select a tag...">
+                                    <option value="">Select a tag...</option>
+                                    <option>Personal Health Record</option>
+                                    <option>Nursing Applications</option>
+                                    <option>Nursing Documentation</option>
+                                    <option>RFID-Patient Tracking</option>
+                                    <option>Mobile Helathcare</option>
+                                    <option>Mobile Applications</option>
+                                    <option>Mobile Healthcare</option>
+                                    <option>Mobile Privacy & Security</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                        <script>
+				        
+                        </script>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Area of Medical Expertise <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <select id="medical-select" class="demo-default" placeholder="Select a tag...">
+                                    <option value="">Select a tag...</option>
+                                    <option>Diabetes</option>
+                                    <option>COPD</option>
+                                    <option>Asthma</option>
+                                    <option>Achalasia</option>
+                                    <option>Acid reflux</option>
+                                    <option>Antacid medicines</option>
+                                    <option>Benign migratory glossitis</option>
+                                    <option>Endocarditis</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-buttons text-right">
+                            <button type="submit" class="grey">Cancel</button>
+                            <input type="submit" value="Submit" class="green" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-wrapper fade" ng-if="showMsgModal">
+                <div class="modal" ng-class="{'show' : showMsgModal }">
+                    <i class="fa fa-close pull-right close-btn" ng-click="launchMsgModal($event, false)"></i>
+
+                    <h2>Send Message</h2>
+                    <hr />
+                    <br />
+                    <form>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Subject <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="textfield" />
+                            </div>
+                        </div>
+                        <div class="row field-row">
+                            <div class="col-md-4">
+                                <label>Message <span class="required">*</span></label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="form-buttons text-right">
+                            <button type="submit" class="grey">Cancel</button>
+                            <input type="submit" value="Send" class="green" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

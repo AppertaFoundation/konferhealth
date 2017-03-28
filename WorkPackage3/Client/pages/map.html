@@ -1,0 +1,117 @@
+
+<ng-include src="'/partials/search-bar.html'"></ng-include>
+
+
+<div class="filter-tabs">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+						<ul>
+								<li>
+									<a href="#_" class="active">All <span>4</span></a>
+								</li>
+								<li>
+									<a href="#_">Products  <span>12</span></a>
+								</li>
+								<li>
+									<a href="#_">Services  <span>37</span></a>
+								</li>
+								<li>
+									<a href="#_">Buyers  <span>8</span></a>
+								</li>
+								<li>
+									<a href="#_">Collaborators  <span>11</span></a>
+								</li>
+								<li>
+									<a href="#_">Funding  <span>11</span></a>
+								</li>
+								<li>
+									<a href="#_" class="more-hover">More <i class="fa fa-caret-down"></i></a>
+									<div class="dropdown">
+											<ul>
+												<li>
+													<a href="#_">Events  <span>2</span></a>
+												</li>
+												<li>
+													<a href="#_">News  <span>3</span></a>
+												</li>
+												<li>
+													<a href="#_">Contract  <span>8</span></a>
+												</li>
+											</ul>
+									</div>
+
+								</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+</div>
+
+<div class="content" ng-if="getActiveView() == 'map'">
+		<div class="map-wrapper">
+				<div class="container">
+					<div class="row">
+
+							<div class="col-xs-12">
+
+								<div class="results-meta">
+										<p>
+											Showing <strong>{{activeFilter()}}</strong> relating to <strong>"{{getCurrentSearchTerm()}}"</strong>
+											<i class="fa fa-circle"></i>
+											Found <strong>231</strong> results across <strong>8</strong> categories
+										</p>
+
+										<div class="views">
+											<a href="#_" ng-class="{ active: isView('list') }" ng-click="activateView($event, 'list')"><i class="fa fa-navicon"></i></a>
+											<a href="#_" ng-class="{ active: isView('map') }" ng-click="activateView($event, 'map')"><i class="fa fa-map-marker"></i></a>
+											<a href="#_"><i class="fa fa-image"></i></a>
+										</div>
+
+								</div>
+
+							</div>
+					</div>
+			</div>
+
+			<ng-map class="map-div" style="display:block; width: 100%; height:100%;" zoom="11"
+			     pan-control="true"
+			     map-type-control="true"
+			     map-type-control-options="{style:'DROPDOWN_MENU'}"
+			     zoom-control="true"
+			     zoom-control-options="{style:'SMALL'}">
+		  </ng-map>
+
+			<div class="left-panel-overlay">
+
+				<div class="result-row">
+					<div class="col-xs-12">
+						<h2><a href="">Pioneering Heart Research</a></h2>
+						<ul class="meta-li">
+							<li>University of Hull</li>
+							<li>Research Article</li>
+						</ul>
+						<p>
+						Register 13 December 2012 New technique that could aid heart surgery: A University of Hull research team has successfully developed a novel system for keeping human heart tissue biopsies alive...
+
+						<ul class="plain-list">
+							<li>Monday <strong>12:00 - 09:00</strong></li>
+							<li>Tuesday <strong>12:00 - 09:00</strong></li>
+							<li>Wednesday <strong>12:00 - 09:00</strong></li>
+							<li>Thursday <strong>12:00 - 09:00</strong></li>
+							<li>Friday <strong>12:00 - 09:00</strong></li>
+							<li>Saturday <strong>12:00 - 09:00</strong></li>
+							<li>Sunday <strong>12:00 - 09:00</strong></li>
+						</ul>
+						<br/>
+
+						<a class="text-link" href="">Read More &#160;&#160;<i class="fa fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeLmDnx9CL0N_7olfs3-5pkyZy8okUnI0&callback=initMap"
+async defer></script>

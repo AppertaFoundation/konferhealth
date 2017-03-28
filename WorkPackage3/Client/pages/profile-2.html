@@ -1,0 +1,414 @@
+﻿
+<div class="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-6 single-title-area">
+                <h1>{{getProfileDataLocumsNest().user}}</h1>
+                <ul class="meta-li">
+                    <li>{{getProfileDataLocumsNest().summary}}</li>
+                </ul>
+            </div>
+            <div class="col-xs-3 hidden-xs col-sm-3">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="filter-tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-sm col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <ul>
+                    <li><a ng-class="{ active: isActive('About') }" ng-click="activateTab($event, 'About')" href="#_">About</a></li>
+                    <li><a ng-class="{ active: isActive('Products') }" ng-click="activateTab($event, 'Products')" href="#_">Products &amp; Services</a></li>
+                    <li><a ng-class="{ active: isActive('Contacts') }" ng-click="activateTab($event, 'Contacts')" href="#_">Contacts</a></li>
+                    <li><a ng-class="{ active: isActive('Contracts') }" ng-click="activateTab($event, 'Contracts')" href="#_">Contracts</a></li>
+                    <li><a ng-class="{ active: isActive('Case Studies') }" ng-click="activateTab($event, 'Case Studies')" href="#_">Case Studies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 hidden-xs hidden-sm right-nudge">
+                <div class="profile-image" style="background-image:url({{getProfileDataLocumsNest().avatar}})"></div>
+                <h3>Contact Details</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Address</span>
+                        <span class="stat-data">62 Pursewardens Close</span>
+                        <span class="stat-data">London</span>
+                        <span class="stat-data">United Kingdom</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Phone Number</span>
+                        
+                    </li>
+                    <li>
+                        <span class="stat-name">Email</span>
+                        <span class="stat-data">contact@locumsnest.co.uk</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Website</span>
+                        <span class="stat-data"><a href="http://www.locumsnest.co.uk/" target="_blank">www.locumsnest.co.uk</a></span>
+                    </li>
+                    <li>
+                        <img src="../images/social-icons.png" style="max-width:200px;" />
+                    </li>
+                </ul>
+
+                <h3>Areas Of Expertise</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-name">Digital</span>
+                        <span class="stat-data">Human Resources</span>
+                        <span class="stat-data">Recruitment</span>
+                    </li>
+                    <li>
+                        <span class="stat-name">Medical</span>
+
+                    </li>
+                </ul>
+                <div class="styled-title">
+                    <div class="box"><i class="fa fa-bullhorn"></i></div>
+                    <h3>Collaboration Request</h3>
+                </div>
+                <ul class="bullet-list">
+                    <li>
+                        <p>Make a collaboration request to get more information about similar companies and solutions</p>
+                        <a href="/#/collaboration" class="text-link">More&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-9 article" ng-if="isActive('About')">
+                <div class="row padding-top">
+                    <div class="col-xs-12">
+                        <!-- <h2>Manage your health with Medelinked</h2> -->
+                        <p><strong>We specialize in app-based, all-around care for people with diabetes – made by people with diabetes. Our apps and services are mutually compatible solutions to ease the daily grind of diabetes. In short, we make diabetes suck less</strong></p>
+                        <hr />
+                        <h3>Who are Locums Nest?</h3>
+                        <p>
+                            The NHS is spending £350million annually (the equivalent of employing 11,000 extra full-time junior doctors) on agency fees alone in exchange for an inefficient process, seriously lacking integrity.
+                        </p>
+                        
+                        <img src="images/ln-product.png" />
+                        <br />
+                        <h3>Problem trying to solve</h3>
+                        <p>
+                            Being frontline NHS professionals ourselves, we appreciate the challenges posed by chronic understaffing and have made it our personal goal to help improve patient safety.
+
+                            Help us drive change and spread the word
+                        </p>
+
+                        <hr />
+                        <br />
+                        <h3>Aims / Objectives</h3>
+                        <p>
+                            Help the NHS save money on agency fees when it comes to locum spend.
+
+                        </p>
+                        <hr />
+                        <br />
+                        <h3>CCG Support</h3>
+
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>AHSN Support</h3>
+
+                        <br />
+                        <hr />
+                        <br />
+                        <h3>Frameworks</h3>
+                        
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-9" ng-if="isActive('Products')">
+
+                <div class="row single-item-row">
+                    <div class="col-xs-12">
+                        <h2>Locum's Nest Mobile App - Professionals</h2>
+                        <p>
+                            Locum’s Nest connects healthcare professionals with NHS hospitals to cover available locum shifts. The current version of the app works for all doctors. 
+                        </p>
+                        <br />
+                        <h5>Details</h5>
+                        <ul class="plain-list">
+                            <li>Type <strong>Product</strong></li>
+                            <li>Commercial Model <strong>Free</strong></li>
+                            <li>Area Of Digital Expertise <strong>Human Resources, Recruitment</strong></li>
+                            <li>Area Of Medical Expertise <strong></strong></li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="">View</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row single-item-row">
+                    <div class="col-xs-12">
+                        <h2>Locum's Nest - NHS Institutions</h2>
+                        <p>
+                            Post shifts both to your staff bank as well as to external locums 24/7 and forget the days of last-minute panic
+                        </p>
+                        <br />
+                        <h5>Details</h5>
+                        <ul class="plain-list">
+                            <li>Type <strong>Product</strong></li>
+                            <li>Commercial Model <strong>Free</strong></li>
+                            <li>Area Of Digital Expertise <strong>Human Resources, Recruitment</strong></li>
+                            <li>Area Of Medical Expertise <strong></strong></li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="">View</a>
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Contacts')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                Name
+                            </div>
+                            <div class="table-cell wide">
+                                Job Title
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Email
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Action
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell title-cell">
+                                <a href="#">Nicholas Andreou</a>
+                            </div>
+                            <div class="table-cell body-cell">
+                                CEO
+                            </div>
+                            <div class="table-cell meta-cell text-center">
+                                contact@locumsnest.co.uk
+                            </div>
+                            <div class="table-cell action-cell text-center">
+                                <a href="" class="mark">View Profile&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                                &nbsp;
+                                <a href="" ng-click="launchMsgModal($event, false)" class="mark">Send Message&#160;&#160;<i class="fa fa-caret-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Contracts')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                With
+                            </div>
+                            <div class="table-cell wide">
+                                Description
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Value
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-9 no-padding" ng-if="isActive('Case Studies')">
+                <div class="table-list-wrapper">
+                    <div class="table list-style condensed">
+                        <div class="table-row headers">
+                            <div class="table-cell wide">
+                                Client
+                            </div>
+                            <div class="table-cell wide">
+                                Description
+                            </div>
+                            <div class="table-cell text-center narrow">
+                                Action
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="modal-wrapper fade" ng-if="showModal">
+                    <div class="modal" ng-class="{'show' : showModal }">
+                        <i class="fa fa-close pull-right close-btn" ng-click="launchModal($event, false)"></i>
+
+                        <h2>Add Product / Service</h2>
+                        <p><strong>Please provide details of the product / service by completing the form below</strong></p>
+                        <hr />
+                        <br />
+                        <form>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Name <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="textfield" />
+                                </div>
+                            </div>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Description <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Problem Solving <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Type</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select>
+                                        <option>Product</option>
+                                        <option>Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Video URL</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="textfield" />
+                                </div>
+                            </div>
+
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Area of Digital Expertise <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select id="digital-select" class="demo-default" placeholder="Select a tag...">
+                                        <option value="">Select a tag...</option>
+                                        <option>Personal Health Record</option>
+                                        <option>Nursing Applications</option>
+                                        <option>Nursing Documentation</option>
+                                        <option>RFID-Patient Tracking</option>
+                                        <option>Mobile Helathcare</option>
+                                        <option>Mobile Applications</option>
+                                        <option>Mobile Healthcare</option>
+                                        <option>Mobile Privacy & Security</option>
+                                    </select>
+                                    <input type="text" name="textfield" id="digital-select" />
+                                </div>
+                            </div>
+                            <script>
+                                $('#digital-select').selectize({
+                                    create: true,
+                                    sortField: {
+                                        field: 'text',
+                                        direction: 'asc'
+                                    },
+                                    dropdownParent: 'body'
+                                });
+                            </script>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Area of Medical Expertise <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select id="medical-select" class="demo-default" placeholder="Select a tag...">
+                                        <option value="">Select a tag...</option>
+                                        <option>Diabetes</option>
+                                        <option>COPD</option>
+                                        <option>Asthma</option>
+                                        <option>Achalasia</option>
+                                        <option>Acid reflux</option>
+                                        <option>Antacid medicines</option>
+                                        <option>Benign migratory glossitis</option>
+                                        <option>Endocarditis</option>
+                                    </select>
+                                    <input type="text" name="textfield" id="digital-select" />
+                                </div>
+                            </div>
+                            <script>
+                                $('#medical-select').selectize({
+                                    create: true,
+                                    sortField: {
+                                        field: 'text',
+                                        direction: 'asc'
+                                    },
+                                    dropdownParent: 'body'
+                                });
+                            </script>
+                            <hr />
+                            <div class="form-buttons text-right">
+                                <button type="submit" class="grey">Cancel</button>
+                                <input type="submit" value="Submit" class="green" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-wrapper fade" ng-if="showMsgModal">
+                    <div class="modal" ng-class="{'show' : showMsgModal }">
+                        <i class="fa fa-close pull-right close-btn" ng-click="launchMsgModal($event, false)"></i>
+
+                        <h2>Send Message</h2>
+                        <hr />
+                        <br />
+                        <form>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Subject <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="textfield" />
+                                </div>
+                            </div>
+                            <div class="row field-row">
+                                <div class="col-md-4">
+                                    <label>Message <span class="required">*</span></label>
+                                </div>
+                                <div class="col-md-8">
+                                    <textarea rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <hr />
+                            <div class="form-buttons text-right">
+                                <button type="submit" class="grey">Cancel</button>
+                                <input type="submit" value="Send" class="green" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+

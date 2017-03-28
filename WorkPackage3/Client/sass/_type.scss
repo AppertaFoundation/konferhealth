@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Montserrat:200,300,400,400i,500,600,700,800');
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+
+p, span, li, strong {
+  font-family: 'Crimson Text', serif;
+  margin:0;
+  color: #576b79;
+  font-size: 15px;
+}
+
+strong {
+  font-weight: 800;
+  line-height: 10px;
+}
+
+h1 {
+  color: #4f86ae;
+  font-weight: 500;
+  font-size: 34px;
+  padding-bottom: 2px;
+}
+
+h2, h2 a {
+    color: #437faa;
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 2px;
+}
+
+h3, h3 a {
+  color: #33d1bf;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h4, h4 a {
+  font-weight: 700;
+  color: #35ebd6;
+  font-size: 20px;
+}
+
+a {
+  color:#09d9c5;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  @include transition();
+
+  &:focus, &:active {
+    text-decoration:none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #0cbdac;
+  }
+}
+
+h5, h5 a {
+  color: #5891ba;
+  font-weight: 700;
+}
+
+.text-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+    display: block;
+}
+.meta-data, .meta-data strong {
+  color: #09d9c5;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align:center;
+    @media (min-width: 992px) {
+      text-align: right;
+      }
+}

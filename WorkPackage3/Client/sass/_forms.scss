@@ -1,0 +1,104 @@
+
+form {
+
+  label {
+    font-family: 'Montserrat', sans-serif;
+    color: #519bcf;
+    font-size: 12px;
+  }
+  input, textarea, select {
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+    color: #4d5f6d;
+    border: 1px solid #c7d7dd;
+    padding: 5px 8px;
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box;
+      @include transition();
+    &:focus {
+      outline: 0;
+      border: 1px solid #b2d3eb;
+      background-color: #f6fafd;
+        }
+  }
+  textarea {
+        padding-top: 8px;
+  }
+
+  select {
+    font-size: 17px;
+    border-radius: 2px;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    padding: 10px;
+    background-image: url("../images/select-arrows.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  .field-row {
+      margin-bottom: 20px;
+  }
+
+  .radios {
+    label {
+        margin-right: 20px;
+    }
+  }
+  span.required {
+    color: #f01717;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .form-buttons {
+    * {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 12px 22px;
+      border-radius: 2px;
+    }
+
+    input, button {
+      margin-right: 17px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+
+    .green {
+      border: 2px solid #31d6c4;
+      color: #28d0be;
+
+      &:hover {
+        background-color: #31d6c4;
+        color:#fff;
+      }
+    }
+
+    .blue {
+      border: 2px solid #46a1df;
+      color: #46a1df;
+      &:hover {
+        background-color: #46a1df;
+        color:#fff;
+      }
+    }
+
+    .grey {
+      border: 2px solid #b6bdc3;
+      color: #98a0a8;
+
+        &:hover {
+          border: 2px solid #8b949c;
+          color: #666f77;
+          }
+      }
+
+  }
+
+}
