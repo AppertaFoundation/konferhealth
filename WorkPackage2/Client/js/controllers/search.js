@@ -2,13 +2,31 @@
 // create the controller and inject Angular's $scope
 app.controller('searchController', function($scope, $location, NgMap) {
 
- $scope.$on('$routeChangeStart', function(next, current) {
-   var isLogin = ($location.path().indexOf('login') > -1),
-       isRegister = ($location.path().indexOf('register') > -1);
-   $scope.showNav = !isLogin && !isRegister;
+    $scope.userName = "Jas Singh";
+    $scope.profileLnk = "#profile-individual";
 
-   $scope.loggedOut = ($location.path().indexOf('login') > -1);
-   $scope.loggedIn = !$scope.loggedOut;
+ $scope.$on('$routeChangeStart', function(next, current) {
+    var isLogin = ($location.path().indexOf('login') > -1),
+    isRegister = ($location.path().indexOf('register') > -1);
+    $scope.showNav = !isLogin && !isRegister;
+
+    $scope.loggedOut = ($location.path().indexOf('login') > -1);
+    $scope.loggedIn = !$scope.loggedOut;
+
+    //Check if we're logged in as someone
+    if ($scope.loggedIn)
+    {
+        var eml = window.localStorage.getItem("CurrentUser");
+        var usr = window.localStorage.getItem(eml);
+        var cntc = JSON.parse(usr);
+
+        if (cntc != null)
+        {
+            $scope.userName = cntc.name;
+            $scope.profileLnk = "#profile-user";
+
+        }
+    }
  });
 
 

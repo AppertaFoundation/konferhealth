@@ -209,7 +209,7 @@ app.controller('profileController', function ($scope, $location) {
 
         $scope.Organisation.name = $scope.Contact.organisation;
         window.localStorage.setItem("CurrentUser", $scope.Contact.email);
-        window.localStorage.setItem($scope.Contact.email, JSON.stringify(Contact));
+        window.localStorage.setItem($scope.Contact.email, JSON.stringify($scope.Contact));
         window.localStorage.setItem($scope.Contact.email + ":org", JSON.stringify($scope.Organisation));
 
         $location.path("/profile-org");

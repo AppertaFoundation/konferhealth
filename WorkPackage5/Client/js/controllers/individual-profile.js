@@ -1,4 +1,4 @@
-app.controller('profileIndividualController', function($scope) {
+app.controller('profileIndividualController', function($scope, $location) {
 
  $scope.getProfileData = function() {
     return {
@@ -7,6 +7,33 @@ app.controller('profileIndividualController', function($scope) {
       avatar: 'images/anon-user.jpg'
     }
  }
+
+ $scope.Contact = {
+     name: '',
+     organisation: '',
+     title: '',
+     building: '',
+     street: '',
+     town: '',
+     city: '',
+     county: '',
+     postcode: '',
+     country: '',
+     email: '',
+     description: '',
+     website: '',
+     ahsn: '',
+     ccg: '',
+     digitaltag: '',
+     medicaltag: '',
+     logo: '',
+     video: '',
+     objectives: '',
+     aim: '',
+     type: '',
+     id: '',
+     password: ''
+ };
 
  var tabs = [{
   name: 'Collaborations',
@@ -28,6 +55,7 @@ app.controller('profileIndividualController', function($scope) {
       eachTab.active = (eachTab.name == tab);
     });
  }
+
  $scope.isActive = function(tab) {
     var thisTab = _.find(tabs, function(eachTab){ return eachTab.name == tab});
     return thisTab.active;
@@ -71,4 +99,31 @@ app.controller('profileIndividualController', function($scope) {
       isNew: false
   }];
 
+ $scope.launchProfileModal = function (e, show) {
+     e.preventDefault();
+     $scope.showProfileModal = show;
+ }
+
+ $scope.saveProfile = function () {
+
+     var eml = window.localStorage.getItem("CurrentUser");
+     window.localStorage.setItem(eml, JSON.stringify($scope.Contact));
+
+     $scope.showProfileModal = false;
+ }
+
+ $scope.$on('$routeChangeSuccess', function (next, current) {
+
+     
+     if ($location.path().indexOf('profile-user') > -1) {
+
+         //Load details of the org from storage
+         var eml = window.localStorage.getItem("CurrentUser");
+         var cntc = window.localStorage.getItem(eml);
+
+         if (cntc != null) {
+             $scope.Contact = JSON.parse(cntc);
+         }
+     }
+ });
 });
